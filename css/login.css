@@ -1,0 +1,67 @@
+@charset "utf-8";
+div,h1,img,p,a,ul,li,form,input,label,select,option,span,br{margin: 0; padding: 0;}
+a{text-decoration: none; color: #999999;}
+ul,li{list-style: none;}
+input,select{outline: none;}
+@font-face{
+    font-family:nanum;
+    src:url('../font/NanumGothic.eot');
+    src:url('../font/NanumGothic.eot?#iefix')format('embedded-opentype'),
+            url('../font/NanumGothic.ttf')format('truetype'),
+            url('../font/NanumGothic.woff')format('woff');
+     }
+
+#wrap{border: 2px solid #eaeaea; width: 540px; height: 500px; padding: 10px; margin: 100px auto; border-radius: 10px;}
+#top_wrap{width: 540px; height: 70px; border-bottom: 1px solid #999999;position: relative;}
+#top_wrap h2{width: 219px; height: 32px; position: absolute; left: 60%; top: 0; transform: translate(-50%, 0); margin-top: 20px;}
+.top_home{float: right; margin-top: 28px;}
+.top_home a{color: #666666; display: block; background: url(../image/ico_home.gif) no-repeat 0 0; padding-left: 20px; line-height: 13px; transition: alll 0.3s}
+.top_home a:hover{background-position: 0 -30px; color: #000;}
+
+
+/*.main_img{clear: both; width: 540px; height: 120px; margin: 30px 0; text-align: center; line-height: 120px;} */
+
+#login_list{width: 540px; height: 50px; margin-bottom: 30px;}
+#login_list li{float: left; width: 270px; height: 50px;}
+#login_list li a{width: 270px; height: 50px; display: block; text-align: center; line-height: 50px; font-size: 15px; border-bottom: 1px solid #999999;}
+#login_list li a.selected1{border: 1px solid #999999; border-bottom: none; width: 269px; font-weight: bold;}
+
+#login_con{clear: both; width: 540px; overflow: hidden;}
+
+#login1{width: 540px; }
+#u_id, #u_pwd{width: 538px; height: 50px; border: 1px solid #cccccc; text-indent: 1em; margin-bottom: 20px;}
+
+#btn_wrap1{width: 540px; height: 60px; position: relative; margin-bottom: 30px; overflow: hidden;}
+#s_btn1,#s_btn2{font-size: 15px; cursor: pointer; width: 540px; height: 60px; position: absolute; left: 0; top: 0; font-weight: bold; }
+#s_btn1{border: none; background-color: #ee2d7a; color: #ffffff; z-index: 2;}
+#s_btn2{border: 1px solid #ee2d7a; background-color: #ffffff; color: #ee2d7a;}
+
+#chk_wrap1 {margin-bottom: 30px;}
+#chk_wrap{width: 540px; height: 25px; margin-bottom: 25px; }
+#chk1,#chk2{width: 0; height: 0; overflow: hidden; margin-bottom: 20px;}
+label.type01{background: url(../image/bg_checkbox.png) no-repeat 0 0; height: 24px; display: inline-block; padding-left: 30px; padding-right: 30px; color: #666666; cursor: pointer; user-select: none; float: right;}
+label.type01.checked{background-position: 0 -100px;}
+
+.search1,.join1{color: #666666; font-size: 15px; margin: 0 48px; padding-left: 20px; transition: all 0.3s;}
+.search1{background: url(../image/bg_find.png) no-repeat 0 0; }
+.join1{background: url(../image/bg_member.png) no-repeat 0 0; }
+.search1:hover,.join1:hover{background-position: 0 -30px; color: #000;}
+
+#login2{width: 540px;}
+#u_order{width: 538px; height: 50px; border: 1px solid #cccccc; text-indent: 1em; margin-bottom: 10px;}
+#tel_wrap{width: 540px; height: 75px; margin: 15px 0;}
+#tel_wrap p {float: left; }
+#tel_wrap p span{margin: 0 3px;}
+#tel1,#tel2,#tel3{border: 1px solid #cccccc; height: 50px;}
+#tel1{width: 130px; text-indent: 10px; color: #999999; height: 52px;}
+#tel2,#tel3{width: 180px; text-align: center;}
+
+#btn_wrap2{width: 540px; height: 60px; position: relative; margin-bottom: 10px; overflow: hidden;}
+#s_btn3,#s_btn4{font-size: 15px; cursor: pointer; width: 540px; height: 60px; position: absolute; left: 0; top: 0; font-weight: bold; }
+#s_btn3{border: none; background-color: #ee2d7a; color: #ffffff; z-index: 2;}
+#s_btn4{border: 1px solid #ee2d7a; background-color: #ffffff; color: #ee2d7a;}
+
+.search2,.join2{color: #666666; font-size: 15px; margin: 0 48px; padding-left: 20px; transition: all 0.3s;}
+.search2{background: url(../image/bg_find.png) no-repeat 0 0; }
+.join2{background: url(../image/bg_member.png) no-repeat 0 0; }
+.search2:hover,.join2:hover{background-position: 0 -30px; color: #000;}

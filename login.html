@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/login.js"></script>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>    
+  <div id="wrap">
+    <div id="top_wrap">
+      <h2>로그인</h2>
+      <p class="top_home"><a href="index.html">홈으로가기</a></p>
+    </div><!--top_wrap-->
+<!--    <p class="main_img"><img src="image/logo_login_black.png" alt="#" width="109" height="36"></p>-->
+    <ul id="login_list">
+      <li><a href="#login1" class="selected1">회원 로그인</a></li>
+      <li><a href="#login2">비회원(주문조회)</a></li>
+    </ul><!--login_list-->
+    <div id="login_con">
+      <div id="login1" class="login_box">
+        <form action="#" method="post">
+          <p><input type="text" id="u_id" placeholder="아이디" autocomplete="off"></p>
+          <p><input type="password" id="u_pwd" placeholder="비밀번호" autocomplete="off"></p>
+          <p id="btn_wrap1">
+            <input type="button" id="s_btn1" value="로그인">
+            <input type="button" id="s_btn2" value="로그인">
+          </p>
+          <p id="chk_wrap1">
+            <input type="checkbox" name="chk" id="chk1" value="1">
+            <label for="chk1" class="type01 type02">아이디 저장</label>
+            <input type="checkbox" name="chk" id="chk2" value="2">
+            <label for="chk2" class="type01 type03">로그인 상태 유지</label>
+          </p>
+          <p>
+            <a href="#" class="search1">아이디/비밀번호 찾기</a>
+            <a href="signup.html" class="join1">아직 회원이 아니세요?</a>
+          </p>
+        </form>
+      </div><!---회원 로그인-->
+      <div id="login2" class="login_box">
+        <form action="#" method="post">
+          <p><input type="text" placeholder="주문번호" id="u_order"></p>
+          <div id="tel_wrap">주문자 휴대폰 번호<br>
+            <p class="tel1_wrap">
+              <select id="tel1">
+                <option>선택</option>
+                <option value="010">010</option>
+                <option value="011">011</option>
+              </select><span> - </span>
+            </p>
+            <p class="tel2_wrap">
+              <input type="tel" id="tel2" title="전화번호 앞자리">
+              <span> - </span>
+            </p>
+            <p class="tel3_wrap">
+              <input type="tel" id="tel3" title="전화번호 뒷자리">
+            </p>
+          </div>
+          <p id="btn_wrap2">
+            <input type="button" id="s_btn3" value="로그인">
+            <input type="button" id="s_btn4" value="로그인">
+          </p>
+          <p>
+            <a href="#" class="search2">아이디/비밀번호 찾기</a>
+            <a href="#" class="join2">아직 회원이 아니세요?</a>
+          </p>
+        </form>
+      </div><!---비회원(주문조회)-->
+    </div>
+  </div>
+</body>
+</html>
